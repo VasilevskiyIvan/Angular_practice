@@ -1,0 +1,15 @@
+<div class="menu-container">
+  <button class="menu-toggle" (click)="toggleMenu()">
+    Меню
+  </button>
+  
+  <div class="dropdown-content" *ngIf="isMenuOpen">
+    <button 
+      *ngFor="let item of menuItems" 
+      (click)="navigate(item)"
+      class="menu-item"
+    >
+      {{ item.text }}
+    </button>
+  </div>
+</div>

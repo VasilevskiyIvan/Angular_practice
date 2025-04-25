@@ -1,0 +1,43 @@
+<div class="profile" *ngIf="!isLoading && user; else loadingTpl">
+    <img [src]="user.avatar" class="profile__avatar">
+    
+    <div class="profile__user-info">
+        <h2 class="profile__username">{{ user.username }}</h2>
+        
+        <div class="profile__field" *ngIf="user.age">
+            <span class="profile__label">Возрастпппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп:</span>
+            <span class="profile__value">{{ user.age }}</span>
+        </div>
+        
+        <div class="profile__field" *ngIf="user.about">
+            <p class="profile__label">О себе:
+            <span class="profile__value">{{ user.about }}</span>
+            </p>
+        </div>
+        
+        <div class="profile__field" *ngIf="user.location">
+            <p class="profile__label">Местоположение:
+            <span class="profile__value">{{ user.location }}</span>
+            </p>
+        </div>
+        
+        <div class="profile__field" *ngIf="user.hobbies && user.hobbies.length">
+            <p class="profile__label">Хобби:</p>
+            <ul class="profile__hobbies">
+                <li class="profile__hobby" *ngFor="let hobby of user.hobbies">{{ hobby }}</li>
+            </ul>
+        </div>
+        
+        <div class="profile__social" *ngIf="user.socialLinks">
+            <h3 class="profile__social-title">Социальные сети</h3>
+            <div class="profile__social-links">
+                <a *ngIf="user.socialLinks.telegram" [href]="user.socialLinks.telegram" class="profile__social-link"><img src="https://static.insales-cdn.com/files/1/1492/26961364/original/telegram-logo__2_.webp" class="profile__social-links-icon"></a>
+                <a *ngIf="user.socialLinks.vk" [href]="user.socialLinks.vk" class="profile__social-link"><img src="https://static.insales-cdn.com/files/1/7538/27213170/original/vk.svg" class="profile__social-links-icon"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #loadingTpl>
+    <p>Загрузка</p>
+</ng-template>

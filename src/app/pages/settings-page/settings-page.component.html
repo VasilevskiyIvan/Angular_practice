@@ -1,0 +1,53 @@
+<div class="settings">
+    <h2 class="settings__title">Настройки профиля</h2>
+
+    <form class="settings__form">
+        <div class="settings__form-columns">
+            <div class="settings__form-column">
+                <div class="settings__form-group">
+                    <label for="username" class="settings__label">Имя пользователя:</label>
+                    <input id="username" type="text" [formControl]="usernameControl" class="settings__input">
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="age" class="settings__label">Возраст:</label>
+                    <input id="age" type="number" [formControl]="ageControl" class="settings__input">
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="about" class="settings__label">О себе:</label>
+                    <textarea id="about" [formControl]="aboutControl" class="settings__textarea"></textarea>
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="location" class="settings__label">Местоположение:</label>
+                    <input id="location" type="text" [formControl]="locationControl" class="settings__input">
+                </div>
+            </div>
+
+            <div class="settings__form-column">
+                <div class="settings__form-group">
+                    <label for="hobbies" class="settings__label">Хобби (через запятую):</label>
+                    <input id="hobbies" type="text" [formControl]="hobbiesControl" class="settings__input">
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="avatar" class="settings__label">Аватар (URL):</label>
+                    <input id="avatar" type="text" [formControl]="avatarControl" class="settings__input">
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="telegram" class="settings__label">Telegram:</label>
+                    <input id="telegram" type="text" [formControl]="telegramControl" class="settings__input">
+                </div>
+
+                <div class="settings__form-group">
+                    <label for="vk" class="settings__label">VK:</label>
+                    <input id="vk" type="text" [formControl]="vkControl" class="settings__input">
+                </div>
+
+                <button type="button" (click)="saveSettings()" class="settings__save-button">Сохранить</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,10 @@
+<form [formGroup]="cardForm" (ngSubmit)="onSubmit()" class="add-card">
+    <h2>Добавить карту</h2>
+    <label>Заголовок</label>
+    <input class="add-card__title" formControlName="title">
+    <label>Описание</label>
+    <input class="add-card__description" formControlName="description">
+    <label>Путь к фото</label>
+    <input class="add-card__image-path" formControlName="imagePath">
+    <button type="submit">Сохранить</button>
+</form>

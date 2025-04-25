@@ -1,0 +1,39 @@
+{
+  "profile": {
+    "username": "Какое-то имя",
+    "avatar": "https://img.freepik.com/photos-premium/paysage-panoramique-au-lever-du-soleil_335224-1307.jpg",
+    "age": 20,
+    "about": "Идет какое-то описание.Идет какое-то описание.Идет какое-то описание.Идет какое-то описание.Идет какое-то описание",
+    "location": "Челябинск",
+    "hobbies": [
+      "Путешествия",
+      "воркаут",
+      "армрестлинг",
+      "футбол"
+    ],
+    "socialLinks": {
+      "telegram": "https://t.me/какая-то ссылка",
+      "vk": "https://vk.com/какая-то ссылка"
+    }
+  },
+  "cards": [
+    {
+      "id": "1",
+      "title": "Карта 1",
+      "description": "Описание карты 1",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Monet_-_Monets_Garten_in_Giverny.jpg/250px-Monet_-_Monets_Garten_in_Giverny.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Карта 2",
+      "description": "Описание карты 2",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Song-Palace1.jpg/1280px-Song-Palace1.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Карта 3",
+      "description": "Описание карты 3",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Albrecht_Altdorfer_-_Landscape_with_a_Church_%28Museum_Boijmans_Van_Beuningen%29.jpg"
+    }
+  ]
+}

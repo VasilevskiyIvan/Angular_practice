@@ -1,0 +1,9 @@
+<main>
+    <app-card
+    *ngFor="let card of data" 
+    [title]="card.title"
+    [description]="card.description"
+    [imagePath]="card.imagePath"
+    ></app-card>
+    <add-card></add-card>
+</main>
